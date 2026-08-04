@@ -1,15 +1,18 @@
-a = 2
-b = 3
+# a = 2
+# b = 3
+# print(a + b)
+# a = str(input("Enter Your Name: \n"))
+# print(a)
 
-print(a + b)
+# # next
+# n = int(input("Enter renge of a seris"))
+# for i in range (n):
+#     print(i)
 
-a = str(input("Enter Your Name: \n"))
-<<<<<<< HEAD
-print(a)
-
-n = int(input("Enter renge of a seris"))
+# Febonacci series
+n = int(input("Enter renge of febonacci series: "))
+a=0
+b=1
 for i in range (n):
-    print(i)
-=======
-print(a)
->>>>>>> d0352b7032836ce14abe4a683f711764ae5c2678
+    print (a,end=", ")
+    a,b=b,(a+b)
