@@ -9,10 +9,20 @@
 # for i in range (n):
 #     print(i)
 
-# Febonacci series
-n = int(input("Enter renge of febonacci series: "))
-a=0
-b=1
-for i in range (n):
-    print (a,end=", ")
-    a,b=b,(a+b)
+# # Febonacci series
+# n = int(input("Enter renge of febonacci series: "))
+# a=0
+# b=1
+# for i in range (n):
+#     print (a,end=", ")
+#     a,b=b,(a+b)
+
+
+#     # Prime or not
+# p = int(input("Enter a number to check prime or not: "))
+# for i in range(2,p):
+#     if p % i == 0:
+#         print(f"{p} is not prime.")
+#         break
+# else:
+#     print(f"{p} is a prime number.")
