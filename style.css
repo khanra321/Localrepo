@@ -1,3 +1,17 @@
 p{
     color:blue;
 }
+button{
+    font-size: large;
+    height:30px;
+    width:50px;
+    margin:20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow:1px 1px 1px 0px black;
+}
+button:active{
+    color: black;
+    background-color: aqua;
+
+}
