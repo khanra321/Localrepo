@@ -7,10 +7,19 @@ show1[0].innerHTML = "The first paragraph (index 0) inside 'main' is: " + y[0].i
 
 
 let light = document.getElementById("im");
+const onc = document.getElementById("on");
+const offc = document.getElementById("off");
 
 function turnOn(){
     light.src = "on.jpg";
+    onc.style.display="none";
+    offc.style.display="block";
+    // light.style.height="300px";
 }
 function turnOff() {
     light.src = "off.png";
+    offc.style.display="none";
+    onc.style.display="block";
+    
+    
 }
