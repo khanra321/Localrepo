@@ -30,3 +30,12 @@ function data() {
 }
 
 
+function validateForm(){
+    let ch = document.forms["myForm"]["fName"].value;
+    if (ch == ""){
+        alert("Name must be filled out.");
+        return false;
+    }
+}
+
+

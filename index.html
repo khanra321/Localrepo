@@ -21,8 +21,8 @@
     <button onclick = "data()">Date</button>
     <p id="dat"></p>
     
-    <form name="myName" action="">
-        Name: <input id="fName" type="text" required>
+    <form name="myForm" onsubmit="return validateForm()" >
+        Name: <input id="fName" type="text">
         <input type="submit" value="Submit">
     </form>
 </body>
