@@ -15,7 +15,6 @@ function turnOn(){
     light.src = "on.jpg";
     onc.style.display="none";
     offc.style.display="block";
-    // light.style.height="300px";
 }
 function turnOff() {
     light.src = "off.png";
@@ -37,5 +36,22 @@ function validateForm(){
         return false;
     }
 }
+
+function clickMe(){
+    const inD = document.getElementById("animate");
+    let b = 0;
+    let a = setInterval(frame, 2);
+    function frame(){ 
+        if (b == 120){
+            clearInterval(a);
+        }else{
+            b++;
+            inD.style.top = b + "px";
+            inD.style.left = b + "px";
+        }
+    }
+
+}
+
 
 

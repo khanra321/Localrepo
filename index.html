@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="main">
         <p>Finding HTML Elements by Tag Name</p>
-        <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>   
+        <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
     </div>
-    <p id = "demo"></p>
-    <p class = "demo1"></p>
+    <p id="demo"></p>
+    <p class="demo1"></p>
 
-    <img id="im" src="off.png" alt="off">
-    <button onclick = "turnOn()" id="on">on</button>
-    <button onclick = "turnOff()" id="off">off</button>
+    <div id = hold>
+        <img id="im" src="off.png" alt="off">
+        <button onclick="turnOn()" id="on">on</button>
+        <button onclick="turnOff()" id="off">off</button>
+    </div>
 
-    <button onclick = "data()">Date</button>
+
+    <button onclick="data()">Date</button>
     <p id="dat"></p>
-    
-    <form name="myForm" onsubmit="return validateForm()" >
+
+    <form name="myForm" onsubmit="return validateForm()">
         Name: <input id="fName" type="text">
         <input type="submit" value="Submit">
     </form>
+
+    <button id="click" onclick="clickMe()">clickMe</button>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
 </body>
-<script src = "script.js"></script>
+<script src="script.js"></script>
+
 </html>
