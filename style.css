@@ -1,5 +1,5 @@
 p{
-    color:blue;
+    color:rgb(0, 0, 147);
 }
 button{
     font-size: large;
@@ -10,21 +10,30 @@ button{
     border-radius: 10px;
     box-shadow:1px 1px 1px 0px black;
 }
-button:active{
+#on{
+    background-color: yellow;
+    position: fixed;
+    left: 300px;
+    top: 300px;
+}
+
+#off{
+    display:none;
+    position: fixed;
+    left: 300px;
+    top: 300px;
+}
+
+
+#on:active{
     color: black;
     background-color: aqua;
 
 }
-#off{
-    /* display:none; */
-    position: fixed;
-    left: 300px;
-    top: 300px;
-}
-#on{
-    position: fixed;
-    left: 300px;
-    top: 300px;
+#off:active{
+    color: black;
+    background-color: aqua;
+
 }
 img{
     height: 300px;
