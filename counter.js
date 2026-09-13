@@ -31,6 +31,5 @@ function countSave(){
 
 function countStore(){
     let save = localStorage.getItem("countS");
-    count = save;
-    countUpdate();
+    document.getElementById("lastStore").innerHTML = save;
 }
