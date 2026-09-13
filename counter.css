@@ -5,11 +5,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+div{
+    margin-top: 3%;
 }
 
 #countDiv{
     position: relative;
-    height: 100px;
+    height: 20vh;
     width: 100vw;
 
     
@@ -36,7 +40,7 @@ body{
 }
 
 #lastDiv{
-    height: 100px;
+    height: 20vh;
     width: 100vw;
 
     display: flex;
@@ -61,7 +65,7 @@ body{
 
 }
 #butDiv{
-    height: 100px;
+    height: 20vh;
     width: 100vw;
 
     display: flex;
@@ -89,7 +93,7 @@ button{
 }
 
 #storeDiv{
-    height: 50px;
+    height: 10vh;
     width: 80vw;
 
     color: rgb(255, 255, 255);
