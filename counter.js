@@ -1,7 +1,18 @@
+let con = document.getElementById("counting");
+let st = document.getElementById("store");
+let show = document.getElementById("lastStore");
+
+document.getElementById("Incrise").addEventListener("click", countIncrise);
+document.getElementById("Decrise").addEventListener("click", countDecrise);
+document.getElementById("Reset").addEventListener("click", countReset);
+document.getElementById("Save").addEventListener("click", countSave);
+document.getElementById("Store").addEventListener("click", countStore);
+
+
 let count = 0;
 
 function countUpdate(){
-    document.getElementById("counting").innerHTML = count;
+    con.innerHTML = count;
 }
 
 function countIncrise(){
@@ -20,7 +31,6 @@ function countReset(){
 
 function countSave(){
     localStorage.setItem("countS", count);
-    let st = document.getElementById("store");
     // st.innerhtml = count + ", ";
     const pre = 0;
     if (pre !== count){
@@ -31,5 +41,5 @@ function countSave(){
 
 function countStore(){
     let save = localStorage.getItem("countS");
-    document.getElementById("lastStore").innerHTML = save;
+    show.innerHTML = save;
 }
