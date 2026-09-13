@@ -8,14 +8,25 @@
 
 </head>
 <body>
-    <p id="counting">0</p>
-    <button onclick="countIncrise()">+</button>
-    <button onclick="countDecrise()">-</button>
-    <button onclick="countReset()">Reset</button>
-    <button onclick="countSave()">Save</button>
-    <button onclick="countStore()">Store</button>
-    <p id="store"></p>
+    <div id="countDiv">
+        <p id="counting">0</p>
+    </div>
+    <div id="lastDiv">
+        <p id="lastStore">last Store</p>
+    </div>
 
+    <div id="butDiv">
+        <button onclick="countIncrise()">+</button>
+        <button onclick="countDecrise()">-</button>
+        <button onclick="countReset()">Reset</button>
+        <button onclick="countSave()">Save</button>
+        <button onclick="countStore()">Store</button>
+    </div>
+    
+    <div id="storeDiv">
+        <p id="store"></p>
+    </div>
+    
     <script src="counter.js"></script>
 </body>
 </html>

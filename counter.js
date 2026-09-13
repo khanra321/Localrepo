@@ -24,7 +24,7 @@ function countSave(){
     // st.innerhtml = count + ", ";
     const pre = 0;
     if (pre !== count){
-        st.append(count + ", "); // append data in store id element 
+        st.append(count + ",  "); // append data in store id element 
     }
     pre == count;
 }

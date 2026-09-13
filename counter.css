@@ -1,0 +1,105 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#countDiv{
+    position: relative;
+    height: 100px;
+    width: 100vw;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#counting{
+    height: 100px;
+    width: 100px;
+
+    font-size: x-large;
+
+    color: aliceblue;
+    background-color: blue;
+
+    border: 3px solid black;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#lastDiv{
+    height: 100px;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#lastStore{
+    height: 30%;
+    width: 10%;
+    font-size: larger;
+
+    color: white;
+    background-color: black;
+    border-radius: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#butDiv{
+    height: 100px;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+
+}
+
+button{
+    height: 40%;
+    width: 10%;
+    font-size: larger;
+
+    border-radius: 9px;
+    
+
+
+
+    color:aliceblue;
+    background-color: rgb(1, 56, 77);
+    margin-right: 10px;
+}
+
+#storeDiv{
+    height: 50px;
+    width: 80vw;
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(88, 0, 71);
+
+    border: 3px solid black;
+    border-radius: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
