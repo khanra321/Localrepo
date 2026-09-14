@@ -4,9 +4,9 @@ let unorder = document.getElementById("unorder");
 let clear = document.getElementById("clear");
 
 add.addEventListener("click", addList);
-// clear.addEventListener("click", );
+clear.addEventListener("click", clearList);
 
-tasks = [];
+let tasks = [];
 
 function displayList(){
     let html = "";
@@ -26,5 +26,17 @@ function addList(){
     input.value = "";
     displayList();
 }
+
+function removeTask(i){
+    tasks.splice(i, 1);
+    displayList();
+}
+
+function clearList(){
+    tasks = [];
+    displayList();
+
+}
+
 
 
