@@ -14,6 +14,7 @@ function displayList(){
         html += "<li>" + tasks[i]  + " <button onclick='removeTask(" + i + ")';>X</button></li>";
     }
     unorder.innerHTML = html;
+
 }
 
 
@@ -25,18 +26,32 @@ function addList(){
     tasks.push(text);
     input.value = "";
     displayList();
+    saveList();
+
 }
 
 function removeTask(i){
     tasks.splice(i, 1);
     displayList();
+    saveList();
 }
 
 function clearList(){
     tasks = [];
     displayList();
-
+    saveList();
 }
 
+function saveList(){
+    localStorage.setItem("takes", JSON.stringify(tasks));
+}
+function loadList(){
+    let saved = localStorage.getItem("takes");
+    if (saved !== null){
+        tasks = JSON.parse(saved);
+    }
+}
 
+loadList();
+displayList();
 
