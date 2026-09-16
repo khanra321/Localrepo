@@ -11,7 +11,7 @@ let tasks = [];
 function displayList(){
     let html = "";
     for (let i = 0; i < tasks.length; i++){
-        html += "<li>" + tasks[i]  + " <button id='butt'; onclick='removeTask(" + i + ")';>X</button></li>";
+        html += "<li>" + "<p id='name'>"+ tasks[i] + "</p>"  + " <button id='butt'; onclick='removeTask(" + i + ")';>X</button></li>";
     }
     unorder.innerHTML = html;
 

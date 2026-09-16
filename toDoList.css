@@ -106,20 +106,52 @@ body{
 }
 
 ul{
-    width: 60%; 
+    width: 50%; 
     color: white;
 
     
-
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    
+     */
 }
 li{
 
+    height: 3%;
+    width: auto;
+
     margin: 20px;
+    padding: 2px;
+    text-align: center;
+
+    background-color: rgb(118, 1, 107);
+
+    border: 1px solid white;
+    border-radius: 25px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#name{
+    margin-left: 30px;
+}
+
+#clear{
+
+    width: 10%;
+    padding: 8px;
+    font-size: large;
+
+    color: white;
+    background-color: blue;
+
+    border: 2px solid white;
+    border-radius: 25px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
