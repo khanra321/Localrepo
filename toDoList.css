@@ -2,7 +2,7 @@ body{
     min-height: auto;
     width: 100vw;
 
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(255, 255, 255);
 
     display: flex;
     flex-direction: column;
@@ -67,9 +67,11 @@ body{
 }
 
 #input:focus{
+    inset: 0;
+    background-color: rgb(255, 253, 253);
     box-shadow: 
-        inset 6px 6px 10px rgb(97, 97, 97),
-        inset -6px -6px 10px rgb(255, 253, 253);
+        inset 6px 6px 8px #959697,
+        inset -4px -6px 6px white;
     outline: none;
 
 }
@@ -145,28 +147,14 @@ li{
     margin-left: 30px;
 }
 
-/* #clear{
-
-    width: 10%;
-    padding: 8px;
-    font-size: large;
-
-    color: white;
-    background-color: blue;
-
-    border: 2px solid white;
-    border-radius: 25px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-} */
 
 #clear {
-    width: 180px;
-    height: 60px;
+    width: 14%;
+    aspect-ratio: 3/1;
+
+    min-width: 100px;
+    min-height: 40px;
+
 
     background: white;
     /* border: 5px solid white; */
@@ -174,7 +162,7 @@ li{
     border: none;
     border-radius: 15px;
 
-    font-size: 20px;
+    font-size: large;
     cursor: pointer;
 
     /* 3D effect */
@@ -194,15 +182,55 @@ li{
 
 /* next project */
 
-#modal-overlay{
-    display: none;
+.modal{
+    /* display: none; */
     height: 100%;
     width: 100%;
 
     margin: 0;
     padding: 0;
 
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgba(67, 67, 67, 0.5);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.modal.show{
+    display: block;
+}
+
+
+
+#modal-box{
+
+    height: 100%;
+    width: 100%;
+    max-height: 100px;
+    max-width: 270px;
+
+    padding: 10px;
     
+
+    background-color: white;
+    box-shadow: 5px 5px 5px black; 
+
+    border-radius: 5px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+#closed{
+    
+    position: fixed;
+    top: 2px;
+    right: 2px;
 
 }
