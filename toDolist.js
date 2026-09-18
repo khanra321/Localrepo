@@ -21,7 +21,9 @@ function displayList(){
 function addList(){
     let text = input.value;
     if (text === ""){
+        modalShow();
         return;
+    
     }
     tasks.push(text);
     input.value = "";
@@ -54,4 +56,40 @@ function loadList(){
 
 loadList();
 displayList();
+
+
+// modal project
+
+const moOverlay = document.getElementById("modal-overlay");
+const closed = document.getElementById("closed");
+
+
+closed.addEventListener("click", modalHide)
+
+function modalShow(){
+    moOverlay.classList.add("show");
+}
+function modalHide(){
+    moOverlay.classList.remove("show");
+}
+
+moOverlay.addEventListener("click", function(event){
+    if(event.target === moOverlay){
+        modalHide();
+    }
+})
+
+// moOverlay.addEventListener("keydown", function(event){
+//     if(event.key === "Escape"){
+//         modalHide();
+//     }
+// })
+
+
+
+
+
+
+
+
 

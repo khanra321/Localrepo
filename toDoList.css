@@ -183,7 +183,7 @@ li{
 /* next project */
 
 .modal{
-    /* display: none; */
+    display: none;
     height: 100%;
     width: 100%;
 
