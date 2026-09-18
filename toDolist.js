@@ -79,11 +79,11 @@ moOverlay.addEventListener("click", function(event){
     }
 })
 
-// moOverlay.addEventListener("keydown", function(event){
-//     if(event.key === "Escape"){
-//         modalHide();
-//     }
-// })
+document.addEventListener("keydown", function(event){
+    if(event.key === "Escape"){
+        modalHide();
+    }
+})
 
 
 
