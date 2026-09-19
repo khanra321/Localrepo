@@ -27,6 +27,97 @@ header{
 
 
 }
+#home{
+
+    text-decoration: none;
+    color: white;
+
+}
+#navLink{
+    height: 100%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#navSearch{
+    height: 100%;
+    width: 28%;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#searchInput{
+    height: 95%;
+    width: 70%;
+
+    padding:0;
+
+    font-size: large;
+    text-align: center;
+
+    background-color: white;
+     /* box-shadow: 
+        inset 6px 6px 10px rgb(88, 88, 88),
+        inset -6px -6px 10px rgb(255, 253, 253); */
+
+
+
+
+    border: 1px solid rgb(60, 2, 206);
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    text-overflow: auto;
+
+}
+
+#searchInput:focus{
+    inset: 0;
+    background-color: rgb(255, 253, 253);
+    box-shadow: 
+        inset 6px 6px 8px #959697,
+        inset -4px -6px 6px white;
+    outline: none;
+
+}
+
+#serchBtn{
+    height: 100%;
+    width: 30%;
+    font-size: large;
+    cursor: pointer;
+
+    color: white;
+    background-color: blue;
+
+    border: none;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    right: 0px;
+
+}
+
+
+#serchBtn:active{
+    background-color: rgb(1, 1, 106);
+}
+
 
 
 /* ToDoList project */
@@ -43,7 +134,9 @@ header{
 
 #create{
     height: 20%;
+    min-height: 40px;
     width: 60%;
+
 
 
     display: flex;
