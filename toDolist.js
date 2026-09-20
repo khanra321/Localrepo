@@ -93,6 +93,8 @@ const searchI = document.getElementById("searchInput");
 const searchB = document.getElementById("searchBtn");
 const searchR = document.getElementById("searchR");
 
+const details = document.getElementById("details");
+
 searchB.addEventListener("click", searchFun);
 
 
@@ -108,6 +110,7 @@ function searchFun(){
         }
            
     }
+    details.innerHTML = "Not match with Task Name"
     modalShow();
 }
 
