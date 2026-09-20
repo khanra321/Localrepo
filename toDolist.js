@@ -11,7 +11,7 @@ let tasks = [];
 function displayList(){
     let html = "";
     for (let i = 0; i < tasks.length; i++){
-        html += "<li>" + "<p id='name'>"+ tasks[i] + "</p>"  + " <button id='butt'; onclick='removeTask(" + i + ")';>X</button></li>";
+        html += "<li>" + "<p id='name'>"+ tasks[i] + "</p>"  + " <button id='butt' onclick='removeTask(" + i + ")'>X</button></li>";
     }
     unorder.innerHTML = html;
 
@@ -36,6 +36,7 @@ function removeTask(i){
     tasks.splice(i, 1);
     displayList();
     saveList();
+    searchR.style.display = "none";
 }
 
 function clearList(){
@@ -84,6 +85,32 @@ document.addEventListener("keydown", function(event){
         modalHide();
     }
 })
+
+
+// naveber search
+
+const searchI = document.getElementById("searchInput");
+const searchB = document.getElementById("searchBtn");
+const searchR = document.getElementById("searchR");
+
+searchB.addEventListener("click", searchFun);
+
+
+
+
+function searchFun(){
+    let IVal = searchI.value;
+
+    for (let i = 0; i < tasks.length; i++){
+        if (IVal === tasks[i] ){
+            searchR.innerHTML = "<li>" + "<p id='name'>"+ tasks[i] + "</p>"  + " <button id='butt' onclick='removeTask(" + i + ")'>X</button></li>"
+            return;
+        }
+           
+    }
+    modalShow();
+}
+
 
 
 

@@ -91,7 +91,7 @@ header{
 
 }
 
-#serchBtn{
+#searchBtn{
     height: 100%;
     width: 30%;
     font-size: large;
@@ -114,8 +114,20 @@ header{
 }
 
 
-#serchBtn:active{
+#searchBtn:active{
     background-color: rgb(1, 1, 106);
+}
+
+
+#searchR{
+    display: block;
+
+    margin-top: 100px;
+
+    width: 50%; 
+    height: 20%;
+    color: white;
+
 }
 
 
