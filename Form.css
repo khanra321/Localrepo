@@ -46,8 +46,8 @@ body{
     height: 6%;
     width: 4%;
 
-    font-size: clamp(10px,4vw,30px);
-    color: rgb(132, 0, 255);
+    font-size: clamp(18px,3vw,30px);
+    color: rgb(39, 1, 73);
 
     display: flex;
     justify-content: center;
@@ -93,7 +93,7 @@ input{
     font-size: large;
     text-align: center;
 
-    border: 1px solid blue;
+    border: 1px solid rgb(29, 1, 70);
     border-radius: 8px;
 
 
@@ -110,32 +110,37 @@ input:focus{
 }
 
 
-#subBtn{
+#subBtn {
+    width: 45%;
+    aspect-ratio: 3/1;
+
     margin-bottom: 2%;
 
-
-    height: 10%;
-    width: 40%;
-
+    min-width: 20px;
+    min-height: 20px;
 
 
-    font-size: large;
-
-    color: white;
-    background-color: rgb(72, 72, 253);
+    background: white;
 
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
 
-    
+    font-size: clamp(15px, 2vw, 60px);
+    cursor: pointer;
 
-
+    box-shadow:
+        inset 1px 1px 1px #b3b1b1,
+        inset -3px -6px 1px #747475;
+}
+#subBtn:active {
+    font-size: clamp(10px, 1vw, 30px);
+    background-color: whitesmoke;
+    box-shadow:
+        inset 3px 3px 1px rgb(158, 157, 157),
+        inset -3px -3px 1px rgb(158, 157, 157);
 }
 
 #subBtn:hover{
-    background-color: rgb(2, 2, 107);
+    background-color: rgb(232, 232, 232);
 }
 
-#subBtn:active{
-    background-color: blue;
-}
