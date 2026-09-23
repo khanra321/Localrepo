@@ -47,7 +47,7 @@ body{
     width: 4%;
 
     font-size: clamp(18px,3vw,30px);
-    color: rgb(39, 1, 73);
+    color: rgb(44, 1, 82);
 
     display: flex;
     justify-content: center;
@@ -93,7 +93,7 @@ input{
     font-size: large;
     text-align: center;
 
-    border: 1px solid rgb(29, 1, 70);
+    border: 1px solid rgb(37, 0, 92);
     border-radius: 8px;
 
 
@@ -119,7 +119,7 @@ input:focus{
     min-width: 20px;
     min-height: 20px;
 
-
+    color:rgb(1, 57, 57);
     background: white;
 
     border: none;
@@ -133,7 +133,7 @@ input:focus{
         inset -3px -6px 1px #747475;
 }
 #subBtn:active {
-    font-size: clamp(10px, 1vw, 30px);
+    font-size: clamp(12px, 2vw, 27px);
     background-color: whitesmoke;
     box-shadow:
         inset 3px 3px 1px rgb(158, 157, 157),
