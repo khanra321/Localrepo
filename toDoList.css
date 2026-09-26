@@ -30,7 +30,7 @@ header{
 #home{
 
     text-decoration: none;
-    color: rgb(255, 75, 225);
+    color: rgb(59, 226, 255);
 
 }
 #navLink{
@@ -98,7 +98,7 @@ header{
     cursor: pointer;
 
     color: white;
-    background-color: blue;
+    background-color: rgb(1, 122, 72);
 
     border: none;
     border-top-right-radius: 35px;
